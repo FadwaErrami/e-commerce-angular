@@ -1,0 +1,54 @@
+/* Utilisation de la grille Bootstrap pour les colonnes */
+.row {
+    display: flex; /* Assurez-vous que les cartes sont en ligne */
+    flex-wrap: wrap; /* Si l'écran devient petit, les cartes se réorganiseront sur plusieurs lignes */
+    gap: 15px; /* Espacement entre les cartes */
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Les éléments à l'intérieur de la carte sont empilés verticalement */
+    height: 100%; 
+    width: 540px;
+  }
+  
+  .card img {
+    max-height: 200px;
+    width: 70%;
+    object-fit: cover;
+    border-bottom: 2px solid #f1f1f1;
+    margin-left: 70px;
+  }
+  
+  .card-body {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Assure que le texte et le bouton sont bien espacés */
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    
+  }
+  
+  .card-text {
+    color: #777;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    background-color: antiquewhite;
+    border: none; 
+    padding: 10px;
+    
+  }
+  .btn:hover{
+    background-color: aqua;
+  }
